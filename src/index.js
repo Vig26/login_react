@@ -1,13 +1,35 @@
-import React from 'react';
+import React,{useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Home from './components/Home/Home';
+// import ContainerInsideExample from './components/Navbar/Navbar';
+import Signup from './components/Signup/Signup';
+import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
+
+export default function App(){
+  const [width, setWindowWidth] = useState(0);
+  const updateDimensions = () => {
+    const width = window.innerWidth
+    setWindowWidth(width)
+  }
+  return(
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>}>
+        </Route>
+        </Routes>
+        <Routes>
+        <Route path='/signup' element={<Signup/>}></Route>
+        </Routes>
+    </Router>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App/>
   </React.StrictMode>
 );
 

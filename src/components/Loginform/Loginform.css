@@ -1,0 +1,96 @@
+.app-form-label {
+    font-size: 10px;
+    font-weight: 600;
+    height: 20px;
+    color: #a5a5a5;
+  }
+  .app-form-header {
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .app-form-inputbase {
+    background-color: #f0f0f0;
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+  }
+  ::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .app-form-forgotpassword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    font-weight: 500;
+    color: #333333;
+    font-size: 10px;
+    height: 35px;
+  }
+  
+  @media (max-width: 1124px) {
+    .app-form-header {
+      display: flex;
+      justify-content: center;
+    }
+    .app-form-password {
+      flex-direction: column;
+    }
+    .app-form-forgotpassword {
+      margin-left: 0px;
+    }
+  }
+
+  .input-container {
+    display: flex;
+    box-shadow: inset;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px;
+    gap: 8px;
+    margin: 10px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  input[type="text"],
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #587068;
+  border: 1px solid #01d28e;
+  border-radius: 5px 5px 5px 5px;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+  background: #6cf0c2;
+}
+
+.login-form {
+    background-color: rgb(240, 217, 217);
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 4px 8px 0 rgba(31, 23, 23, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+
+  .error {
+    color: red;
+    font-size: 15px;
+  }
